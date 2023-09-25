@@ -1,22 +1,55 @@
 {% extends "base_login.html" %}
 {% block content %}
 
-<div class="container" id="container">
-    <form method="post" action="{% url 'common:login' %}">
-        <h1>Login in</h1>
-        {% csrf_token %}
-        {% include "form_errors.html" %}
-        <div class="social-container">
-            <input type="text" class="form-control" name="username" id="username"
-                   value="{{ form.username.value|default_if_none:'' }}" placeholder="ID">
-        </div>
-        <div class="social-container">
-            <input type="password" class="form-control" name="password" id="password"
-                   value="{{ form.password.value|default_if_none:'' }}" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-primary">로그인</button>
-    </form>
-</div>
+<body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- Page Heading -->
 
+                   	<!-- Content Row -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                        	<div class="">
+                        		<div class="card-header">
+                                    <h4 class="m-1 font-weight-bold">Log in</h4>
+                                </div>
+                        		<div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <form method="post" action="{% url 'common:login' %}">
+                                                {% csrf_token %}
+                                                {% include "form_errors.html" %}
+                                                <div class="social-container">
+                                                    <input type="text" class="form-control" name="username" id="username"
+                                                           value="{{ form.username.value|default_if_none:'' }}" placeholder="ID">
+                                                </div><br>
+                                                <div class="social-container">
+                                                    <input type="password" class="form-control" name="password" id="password"
+                                                           value="{{ form.password.value|default_if_none:'' }}" placeholder="Password">
+                                                </div><br>
+                                                <button type="submit" class="btn btn-primary">로그인</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                        	</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- End of Main Content -->
+        </div>
+        <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+</body>
+</html>
 
 {% endblock %}
