@@ -6,6 +6,7 @@ from .forms import QuestionForm, AnswerForm
 
 from django.http import HttpResponseNotAllowed
 
+
 def index(request):
     question_list = Question.objects.order_by('-create_date')
     context = {'question_list': question_list}
