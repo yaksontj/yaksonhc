@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="container my-3">
+<!--
+<div>
     <table class="table">
         <thead>
         <tr class="table-dark">
@@ -30,5 +31,166 @@
     </table>
     <a href="{% url 'pybo:question_create' %}" class="btn btn-primary">질문 등록하기</a>
 </div>
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Konnect</title>
+
+    <!-- Custom fonts for this template-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+	    body{color:black;}
+	    #wrapper{background-color:white; margin:0.5%;}
+	    #wrapper #content-wrapper{background-color:white;}
+	    .card-header{background-color:white;}
+    </style>
+
+</head>
+
+<body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="card-header">
+                        <h5 class="h3 mb-2 text-gray-800">커넥트 생활 백서</h5>
+                        <div class="text-md text-gray-600">회사 생활에 필요한 정보들을 확인 할 수 있습니다. 궁금한점은 하이파이브팀에 문의해주세요!</div>
+                    </div>
+
+                   	<!-- Content Row -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                        	<div class="">
+                        		<div class="card-header">
+                                    <h4 class="m-1 font-weight-bold">1. 신규 멤버 가이드북</h4>
+                                </div>
+                        		<div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> &#128539; 온보딩 프로세스 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 버디 제도 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 업무 구성품 확인하기 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 인터넷 및 복합기 사용법 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 이메일 보안 및 서명 설정 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 회사 자산 보호 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 개인 정보 보호 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 상호 존중 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 업무툴 사용 안내 </div><br>
+                                        </div>
+                                    </div>
+                                </div>
+                        	</div>
+                        </div>
+                        <div class="col-lg-3">
+                        	<div class="">
+                        		<div class="card-header">
+                                    <h4 class="m-1 font-weight-bold">2. 회사 소개</h4>
+                                </div>
+                        		<div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 커넥트는 누구인가? </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 팀 및 멤버 소개 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 사무실 이용 안내 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 오시는 길안내(사무실 주차) </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 취업규칙 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 자주 물어보는질문 </div><br>
+                                        </div>
+                                    </div>
+                                </div>
+                        	</div>
+                        </div>
+                        <div class="col-lg-3">
+                        	<div class="">
+                        		<div class="card-header">
+                                    <h4 class="m-1 font-weight-bold">3. 문화 복지</h4>
+                                </div>
+                        		<div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 우리는 이렇게 일합니다 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 커넥트 근무 제도 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 휴가 가이드 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 경비 사용 안내 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 지출경의서 작성 안내 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 복리후생 </div><br>
+                                        </div>
+                                    </div>
+                                </div>
+                        	</div>
+                        </div>
+                        <div class="col-lg-3">
+                        	<div class="">
+                        		<div class="card-header">
+                                    <h4 class="m-1 font-weight-bold">4. 업무 툴</h4>
+                                </div>
+                        		<div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 메신저 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 이메일(구글) </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 구글문서 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 구글드라이브 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 싸인 오케이 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 구글 Meet </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 카카오T 비즈니스 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 플렉스 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 고위드(법인카드사용) </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 그외 사용툴 정보정리 </div><br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                        	</div>
+                        </div>
+                        <div class="col-lg-3">
+                        	<div class="">
+                        		<div class="card-header">
+                                    <h4 class="m-1 font-weight-bold">5. 서포트</h4>
+                                </div>
+                        		<div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 명함 신청 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 서류 발급 요청 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 등기 및 우편 </div><br>
+                                            <div class="text-md font-weight-bold text-uppercase mb-1"> 퀵 서비스 </div><br>
+                                        </div>
+                                    </div>
+                                </div>
+                        	</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- End of Main Content -->
+        </div>
+        <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+</body>
+</html>
+
+
 
 {% endblock %}
