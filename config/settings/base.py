@@ -129,8 +129,15 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# 로그인
+LOGIN_URL = '/common/login'
+
 # 로그인 성공후 이동하는 URL
 LOGIN_REDIRECT_URL = '/'
 
 # 로그아웃시 이동하는 URL
 LOGOUT_REDIRECT_URL = '/common/login/'
+
+
+SESSION_COOKIE_AGE = 600		# 세션쿠키의 유효기간 설정(default: 2주)
+SESSION_SAVE_EVERY_REQUEST = True	# 서버에게 Request를 보낼 경우 시간 초기화

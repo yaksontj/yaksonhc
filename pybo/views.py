@@ -3,10 +3,11 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import Question, Answer
 from django.utils import timezone
 from .forms import QuestionForm, AnswerForm
+from django.contrib.auth.decorators import login_required
 
 from django.http import HttpResponseNotAllowed
 
-
+@login_required
 def index(request):
     question_list = Question.objects.order_by('-create_date')
     context = {'question_list': question_list}
